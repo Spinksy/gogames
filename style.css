@@ -1,5 +1,5 @@
 body { 
-    background-image: url('gumy\ bears.jpg');
+    background-image: url('pinkbackground.jpg');
     background-size: contain;
 }
 
@@ -24,6 +24,12 @@ h3 {
     margin-top: 8px;
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+
+}
+
 .image-container img { 
     width: 600px;
-}
+}    
