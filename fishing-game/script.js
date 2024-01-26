@@ -9,9 +9,9 @@ var score = 0;
 score++;
 $('#score').text(score);
 
-if (score >= 10)
+if (score >= 10) {
     gameOver();
-        }
+}
 
 function addStitch() {
     score++;
