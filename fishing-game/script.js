@@ -27,6 +27,15 @@ function addStitch() {
 $('#fish').click(addScore);
 $('#stitch').click(addStitch);
 
+function addScore() {
+    score++;
+
+    $('#score').text(score);
+
+    if (score >= 10)
+        gameOver();
+}
+
 function moveFish() {
     var newCSS = {
         'top': Math.random() * 500 + 'px',
