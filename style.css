@@ -1,11 +1,11 @@
 body { 
-    background-image: url('pinkbackground.jpg');
+    background-image: url('pastelbackground.jpg');
     background-size: contain;
 }
 
 h1 { 
     text-align: center;
-    color: white;
+    color: #283039;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 64px;
 }
@@ -22,11 +22,13 @@ h3 {
     align-items: center;
     justify-content: center;
     margin-top: 8px;
+    border-radius: 12px;
 }
 
 .image-container {
     display: flex;
     justify-content: center;
+    gap: 12px;
 
 }
 
