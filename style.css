@@ -16,6 +16,10 @@ h3 {
     text-align: center;
 }
 
+img { 
+    border-radius: 12px;
+}
+
 .games-container { 
     display: flex;
     flex-direction: column;
@@ -25,13 +29,19 @@ h3 {
     border-radius: 12px;
 }
 
-.image-container {
+.games-container { 
+    img { 
+        max-width: 1224px;
+    }
+}
+
+.art-gallery {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 24px;
 
 }
 
-.image-container img { 
+.art-gallery img { 
     width: 600px;
 }    
