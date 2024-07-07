@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,59 @@
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1>Lizeys Web Site - Go Games</h1>
 
-    <!-- <div class="image-container">
-        <img src="HappyEaster.gif" alt="" srcset="">
-    </div> -->
+    <div class="page-container">
+        <div class="sidebar">
+            <h2>Things To Do</h2>
+            <h3 onclick="goToPage('home-page')">Home</h3>
+            <h3 onclick="goToPage('games-page')">Games</h3>
+            <h3>Education</h3>
+            <h3 onclick="goToPage('art-gallery-page')">Art Gallery</h3>
+            <h3>Must see</h3>
+            <h3>Science</h3>
+            <h3>Birthdays</h3>
+            <h3>Speical occasion</h3>
+        </div>
+        <div class="main">
 
-    <h3>Games</h3>
-    <div class="games-container">
-        <a href="fishing-game/index.html">
-            <img src="fishing-game.jpg" alt="">
-        </a>
-        
+            <span class="page-heading">Lizeys Web Site - Go Games</span>
+
+            <!-- <div class="image-container">
+                <img src="HappyEaster.gif" alt="" srcset="">
+            </div> -->
+
+            <div id="home-page" style="display: flex; flex-direction: column; align-items: center;">
+                <p>Welcome to my website</p>
+                <p>Pick an option from the sidebar to do</p>
+                <p>Have fun</p>
+                <p>Lizey</p>
+            </div>
+
+
+            <div id="games-page" style="display: none;">
+                <!-- <h3>Games</h3> -->
+                <div class="games-container">
+                    <a href="fishing-game/index.html">
+                        <img src="fishing-game.jpg" alt="">
+                    </a>
+
+                </div>
+            </div>
+
+            <div id="art-gallery-page" style="display: none;">
+                <!-- <h3>Art Gallery</h3> -->
+                <div class="art-gallery">
+                    <img src="allpickle.jpg">
+                    <img src="catdog.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+
     </div>
-    
-    <h3>Art Gallery</h3>
-    <div class="art-gallery">
-        <img src="allpickle.jpg">
-        <img src="catdog.jpeg" alt="">
-    </div>
+
+
 
     <!-- <div class="cloud-character">
         <img src="./georgie.png" alt="">
@@ -37,7 +71,34 @@
         <img src="./derp.jpeg" alt="">
         <img class="cloud" src="./cloud.png" alt="">
     </div> -->
-    
-    
+
+    <script>
+        function goToPage(page) {
+
+            console.log('page', page)
+
+            const homePage = document.getElementById("home-page");
+            const gamesPage = document.getElementById("games-page");
+            const artGalleryPage = document.getElementById("art-gallery-page");
+
+            if(page === 'home-page') {
+                homePage.style.display = 'flex';
+                gamesPage.style.display = 'none';
+                artGalleryPage.style.display = 'none';
+
+            }
+            else if(page === 'games-page') {
+                homePage.style.display = 'none';
+                gamesPage.style.display = 'flex';
+                artGalleryPage.style.display = 'none';
+            }
+            else { 
+                homePage.style.display = 'none';
+                gamesPage.style.display = 'none';
+                artGalleryPage.style.display = 'flex';
+            }
+        }
+    </script>
 </body>
+
 </html>
