@@ -6,6 +6,7 @@ body {
   background-repeat: no-repeat;
   overflow: hidden;
   color: rgb(10, 5, 70);
+  display: flex;
 }
 
 #fish {
@@ -17,6 +18,15 @@ body {
   border-radius: 1000px;
   padding: 10px;
   transition: 0.5s all ease;
+}
+
+.instructions { 
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  
 }
 
 #stitch {
@@ -31,6 +41,7 @@ body {
 
 #octopus {
   width: 600px;
+  position: absolute;
 }
 
 #whale {
